@@ -21,194 +21,493 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>Terms</li>
+          <li> Code
             <ul>
-              <li>Elements (type of content on a webpage)</li>
+              <li> Tags
                 <ul>
-                  <li>Text</li>
-                  <li>Image</li>
-                  <li>Header</li>
-                  <li>List</li>
-                  <li>Meta-related</li>
-                  <li>Content division</li>
-                  <li>Semantic</li>
-                  <li> !DOCTYPE: is not case-sensitive because it is a declaration (declarations are not case sensitice but HTML elements are) </li>
-                  <li>HTML attribute defines additional information about an element. (HTML attributes are always defined in the beginning element, never the closing element.)</li>
-                  <li>Semantic HTML elements : the name of the element describes its content and the role it plays on a webpage</li>
-                  <li>opening tag/closing tag : the content of a working HTML element is contained between</li>
-                  <li>Element : refers to the entire element from opening tag to closing tag</li>
-                  <li>Tag : refers only to what appears inside the angle brackets</li>
-                  <li>heading : represents the level of given text block on the page</li>
-                  <li></li>
-                  <li>
+                  <li>head
+                    <ul>
+                      <li>Contains information, or metadata, that helps the browser to render the page correcly.</li>
+                      <li>Elements included in the head are not visible when a user looks at a webpage</li>
+                      <li>The head element in this case defines the following three elements
+                        <ul>
+                          <li>charset
+                            <ul>
+                              <li>sets our character encoding</li>
+                            </ul>
+                          </li>
+                          <li>http-equiv
+                            <ul>
+                              <li>sets an HTTP header for content</li>
+                            </ul>
+                          </li>
+                          <li>viewpoint
+                            <ul>
+                              <li>sets the default view for our webpage</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>body
+                    <ul>
+                      <li>Contains content that is shown to the user</li>
+                      <li>All the elements that we want the user to see and interact with must be placed inside this element</li>
+                      <li>defines the body of the document, which contains the content that is visible to the user</li>
+                      <li>All of the content that we want to display to users must be inside this element</li>
+                      <li>this is an example of a semantic HTML element</li>
+                    </ul>
+                  </li>
+                  <li>html
+                    <ul>
+                      <li>This represents the root or start of the html document</li>
+                      <li>HTML attributes define additional information about an element and are always added to the beginning element</li>
+                    </ul>
+                  </li>
+                  <li>meta
+                    <ul>
+                      <li>defines metadata such as the character set, description, keywords, author and viewpoint</li>
+                      <li>This contains informaion used by the browser and isnt visible to the user</li>
+                    </ul>
+                  </li>
+                  <li>title
+                    <ul>
+                      <li>Defines the title of the webpage.</li>
+                      <li>This element is required and is extremely important for the SEO</li>
+                    </ul>
+                  </li>
+                  <li>index.html
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>!DOCTYPE
+                    <ul>
+                      <li>This informs the browser what document type it should expect when it is opened</li>
+                      <li>By adding HTML, we are informing the document that it should expect HTML on the page</li>
+                      <li>This particular tag is not case-sensitive because it is a declaration</li>
+                    </ul>
+                  </li>
+                  <li>lang="blank"
+                    <ul>
+                      <li>Would be found inside an html tag</li>
+                      <li>This tells the browser the language of the webpage</li>
+                      <li>Example: adding "en" would inform the webpage that it is written in english</li>
+                    </ul>
+                  </li>
+                  <li>style
+                    <ul>
+                      <li>defines the CSS styles associated with a webpage</li>
+                    </ul>
+                  </li>
+                  <li>base
+                    <ul>
+                      <li>defines the base URL for a webpage</li>
+                    </ul>
+                  </li>
+                  <li>link
+                    <ul>
+                      <li>connects an external resource to the HTML</li>
+                    </ul>
+                  </li>
+                  <li>script
+                    <ul>
+                      <li>embeds client-side scripts in the HTML</li>
+                    </ul>
+                  </li>
+                  <li>div
+                    <ul>
+                      <li>nonsemantic element</li>
+                      <li>creates a division in the page</li>
+                    </ul>
+                  </li>
+                  <li>span
+                    <ul>
+                      <li>creates an inline division</li>
+                    </ul>
+                  </li>
+                  <li>p
+                    <ul>
+                      <li>Represents a paragraph or block of text</li>
+                      <li>This element is used to wrap text on your webpage</li>
+                    </ul>
+                  </li>
+                  <li>ul
+                    <ul>
+                      <li>unordered lists</li>
+                    </ul>
+                  </li>
+                  <li>ol
+                    <ul>
+                      <li>ordered lists</li>
+                    </ul>
+                  </li>
+                  <li>li
+                    <ul>
+                      <li>list items</li>
+                    </ul>
+                  </li>
+                  <li>img
+                    <ul>
+                      <li>Contains information about images that are displayed on the webpage</li>
+                      <li>Can contain various attributes (see src for an example)</li>
+                    </ul>
+                  </li>
+                  <li>br
+                    <ul>
+                      <li>creates a line of empty space, or a line break between two blocks of content</li>
+                    </ul>
+                  </li>
+                  <li>a
+                    <ul>
+                      <li>stands for anchor</li>
+                      <li>Creates a link to the same webpage or other webpages</li>
+                    </ul>
+                  </li>
+                  <li>header
+                    <ul>
+                      <li>appears at the top of the page and usually contains a navigation menu and/or introductory content</li>
+                    </ul>
+                  </li>
+                  <li>main
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>footer
+                    <ul>
+                      <li>appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation</li>
+                    </ul>
+                  </li>
+                  <li>section
+                    <ul>
+                      <li>semantic element that defines a section in a document that conatins thematic content</li>
+                    </ul>
+                  </li>
                 </ul>
-            </ul>
-          <li>Code</li>
+              </li>
+              <li>Attributes
+                <ul>
+                  <li>src
+                    <ul>
+                      <li>Important for img as it defines the location of the image</li>
+                      <li>defines the location, or source, of the image file</li>
+                    </ul>
+                  </li>
+                  <li>href
+                    <ul>
+                      <li>Points to the URL for the link</li>
+                    </ul>
+                  </li>
+                  <li>alt
+                    <ul>
+                      <li>Contains a text string that describes the appearance and functionality of the image</li>
+                      <li>Is important for screen readers and other assistive technologies.</li>
+                      <li>It also improves search engine rankings for your website</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+             </ul>
+          </li>
+          <li>Components
             <ul>
-              <li> head : contains information or metadata that helps the browser to render the page correctly. Elements within the head are not visible when a user looks at a webpage</li>
-              <li> body : contains the content show to the user. All the elements that we want the user to see and interact with must be place inside this element</li>
-              <li> !DOCTYPE html : This decleration tells the browser what document type it should expect when it is opened</li>
-              <li> html : an opening tag which represents the root, or start, of our HTML document</li>
-              <li>lang= (is the language) "(en)" : is english</li>
-              <li> title : elements defines the title for a webpage. (This element is required and is extremely important for Search Engine Optimization (SEO))</li>
-              <li> style :defines the CSS styles associated with a webpage </li>
-              <li> base : defines the base URL for a webpage</li>
-              <li> link : connects an external resource to the HTML document</li>
-              <li> meta : defines metadata such as the character set, description, keywords, author, and viewpoint</li>
-              <li> script : elements embeds client-side scripts in the HTML document</li>
-              <li> charset (added to) : character set</li>
-              <li> http-equiv (added to) : sets our character encoding</li>
-              <li> viewport (added to) : sets the default view for our webpage</li>
-              <li> div : creates a division in the page </li>
-              <li> span : to create an inline division</li>
-              <li> h1 - h6 : decides the size of the text rendered on the page</li>
-              <li> p : elements represents a paragraph or block of text</li>
-              <li> ul : unordered lists</li>
-              <li> ol : ordered lists</li>
-              <li> li : list items</li>
-              <li> img : contains information about images that are displayed on the webpage</li>
-              <li> src : attribute is the most important because it defines the location of the image</li>
-              <li> br : creates a line of empty space, or a line break, between two blocks of content</li>
-              <li> a (anchor) : creates links to the same webpage or other webpages </li>
-              <li> a href= : attribute point to the URL for the link
-              <li> src : attribute defines the location, or source, of the image file</li>
-              <li> alt : attribute contains a text string that describes the appearance and functionality of the image. Is important for screen readers and other assistive technologies. Alt text can also improve search engine rankings for your website</li>
-              <li> main : element that doesn't hold any code at the moment</li>
-              <li> footer : appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation</li>
-              <li> section : are semantic elements that define a section in a document that contains thematic content </li>
-              <li> id : a way to identify elements and select them</li>
-              <li></li>
+              <li>Rawr</li>
             </ul>
+          </li>
+          <li>Terminology
+            <ul>
+              <li>HTML or HyperText Markup Language
+                <ul>
+                  <li>The most basic building block of websites. It handles the content along with each element of the webpage and its structure.</li>
+                  <li>It is one of the three core languages of the web. (see JavaScript or CSS)</li>
+                </ul>
+              </li>
+              <li>Elements
+                <ul>
+                  <li>Refers to the type of content on a webpage. These elements help provide a structured framework to a webpage and make user navigation easier.</li>
+                  <li>common elements include (these specific elements are visible on the page):
+                    <ul>
+                      <li>Text elements</li>
+                      <li>Image elements</li>
+                      <li>Header elements</li>
+                      <li>List elements</li>
+                    </ul>
+                  </li>
+                  <li>Other elements (these elements are specifically used to describe and divide the content on the page for the computer and other developers):
+                    <ul>
+                      <li>Meta-related elements</li>
+                      <li>Content division elements</li>
+                      <li>Semantic elements</li>
+                    </ul>
+                  </li>
+                  <li>Each HTML element performs a unique roll.</li>
+                </ul>
+              </li>
+              <li>Metadata
+               <ul>
+                  <li>Data about our webpage that the browser uses to effectively serve our webpage users</li>
+                  <li>Metadata is not typicall visible to users and contains important information about accessibility, search engines, and performance</li>
+               </ul>
+              </li>
+              <li>child elements
+                <ul>
+                  <li>Elements that are nested inside other elements</li>
+                </ul>
+              </li>
+              <li>parent elements
+                <ul>
+                  <li>The element that holds all the children elements</li>
+                </ul>
+              </li>
+              <li>semantic HTML elements
+                <ul>
+                  <li>The name of the element describes its content and the role it plays on a webpage</li>
+                  <li>When possible, it is important to use semantic HTML elements, because they make your HTML easier to read</li>
+                  <li>Helps to make sure the webpage is accessible to the widest variety of users, including those who use assistive technologies such as screen readers</li>
+                </ul>
+              </li>
+              <li>element
+                <ul>
+                  <li>Refers to the entire element from opening tag to closing tag</li>
+                </ul>
+              </li>
+              <li>tag
+                <ul>
+                  <li>Refers only to what appears inside the angle brackets</li>
+                </ul>
+              </li>
+              <li>heading
+                <ul>
+                  <li>h1,h2,h3,h4,h5,h6
+                    <ul>
+                      <li>Represents the level of heading a given text block represents</li>
+                    </ul>
+                  <li>Larger or more prominent titles and subtitles to organize a page</li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Structure
+            <ul>
+              <li>Elements are composed of an opening tag and closing tag represented with angle brackets (< >)
+                <ul>
+                  <li>These tags contain everything that we want to include in the element.</li>
+                  <li>This can include content and even other nested elements</li>
+                  <li>Tag names are contained inside of the angle brackets</li>
+                  <li>Closing tags begin with a forward slash /</li>
+                  <li>Content goes between the opening tag and closing tag so that the browser understands how to treat the content</li>
+                </ul>
+              </li>
+             </li>
+              <li>Declarations are not case-sensitive; HTML elements are case-sensitive</li>
+              <li>These specific metadata tags are found inside of the head element
+                <ul>
+                  <li>Title</li>
+                  <li>Style</li>
+                  <li>Link</li>
+                  <li>Meta</li>
+                  <li>Script</li>
+                </ul>
+              </li>
+              <li>Order matters
+                <ul>
+                  <li>h1 - h6: the order of heading sizes. h1 should only appear on a page once</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Useful Websites
+            <ul>
+              <li>Bitches</li>
+            </ul>
+          </li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>notes</li>
+          <li> Code
+           <ul>
+            <li>Meow</li>
+           </ul>
+          </li>
+          <li>Components
+            <ul>
+              <li>Rawr</li>
+            </ul>
+          </li>
+          <li>Terminology
+            <ul>
+              <li>CSS or Cascading Style Sheets
+                <ul>
+                  <li>Used to describe the presentation and how each element is rendered on the webpage</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Useful Websites
+            <ul>
+              <li>Bitches</li>
+            </ul>
+          </li>
         </ul>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>Git code</li>
+          <li> Code
+              <ul>
+                <li>Meow</li>
+              </ul>
+          </li> 
+          </li>
+          <li>Components
             <ul>
-                <li>git status : checks what branch we are currently on</li>
-                <li>git checkout -b (branch) : creates a new branch</li>
-                <li>git : command must precede every Git statement</li>
-                <li>Checkout : command is to move the working branch to a new branch</li>
-                <li> -b : flag creates a new branch</li>
-                <li>add : command adds modifications in the current working branch to the staging area</li>
-                <li>-A : flag indicates that we want to add all changes</li>
-                <li>-m "message": flag to associate a message with our commit. Commit messages should be short descriptive messages of the changes implemented </li>
-                <li>pull : command to receive a branch's modifications into the local environment</li>
-                <li>origin : keyword indicates the source of the pull will be in the GitHub repo</li>
-                <li>push : command to push the changes we have locally to our remote GitHub branch</li>
-                <li> git clone (paste copied SSH value) : clones all the folders and files, but also a .git file that contains Git version control</li>
-                <li> git clone (paste copied SSH value) : clones all the folders and files, but also a .git file that contains Git version control</li>
-                <li>git pull origin main : pulls in the base branch, it is a good idea to do before each sync to make sure your code is properly up-to-date</li>
-                <li>git push origin : pushes all of our changes </li>
+              <li>Rawr</li>
             </ul>
-          <li>SSH Keys</li>
+          </li>
+          <li>Terminology
             <ul>
-              <li>ls -al ~/.ssh: To see if any existing SSH keys are present</li>
-              <li>.pub: is a public SSH</li>
-              <li>ssh-keygen -t (name) -C "email" : creates new SSH key</li>
-              <li>eval "$(ssh-agent -s)" : Starts ssh-agent in terminal</li>
-              <li>git config : Change the name that's associate with your git commits</li>
-              <li>git revert (enter SHA): Will retern the code to an earlier SHA</li>
-              <li>blocker: being stuck on a particular problem</li>
-              <li>bottleneck: a point in our development process that is slowing down the rest of production</li>
+              <li>Git
+                <ul>
+                  <li>A free, open source version control system that allows web developers to collaborate on projects without overwriting each other's work</li>
+                  <li>It also allows developers to revert to previous versions of the code if a problem is discovered</li>
+                </ul>
+              </li>
+              <li>GitHub
+                <ul>
+                  <li>The largest provider of internet hosting for software and web development code, and provides the version control functionality of Git in a central repository</li>
+                </ul>
+              </li>
             </ul>
-          <li>GitHub</li>  
+          </li>
+          <li>Useful Websites
             <ul>
-              <li># : Heading 1 </li>
-              <li>## : Heading 2</li>
+              <li>Bitches</li>
             </ul>
-          <li> VS code</li>
-            <ul>
-              <li> code : Opens the VS without a file</li>
-              <li> code . : Opens the VS with a file</li>
-             
-            </ul>
-          <li>CLI</li>
-            <ul>
-              <li>ls : list of files and directories on our computer</li>
-              <li>cd : command allows us to change directories</li>
-              <li>pwd (print working directory) : will print out the directory that we are currently in to terminal</li>
-              <li>mkdir : create a directory</li>
-              <li>touch : to create a new file</li>
-              <li>open (~/ file) : Opens the file</li>
-              <li></li>
-            </ul>
-
+          </li>
         </ul>
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>notes</li>
+          <li> Code
+              <ul>
+                <li>Meow</li>
+              </ul>
+          </li> 
+          </li>
+          <li>Components
+            <ul>
+              <li>Rawr</li>
+            </ul>
+          </li>
+          <li>Terminology
+            <ul>
+              <li>JavaScript 
+                <ul>
+                  <li>a lightweight program used to provide logic and interactivity</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Useful Websites
+            <ul>
+              <li>Bitches</li>
+            </ul>
+          </li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
-        <h2>Terminology</h2>
+      
+        <h2>Things to keep in mind</h2>
         <ul>
-          <li>package: Contains code written by others that we can add to and use on our computers and in our projects</li>
-          <li>package manager: Like Homebrew, automates the process of installing, upgrading, configuring, and removing packages.</li>
-          <li>code snippet: a portion of code</li>
-          <li>agile software development (used by many in the coding industry): helps developers handle change and uncertainty during the development process</li>
-          <li>terminal: the application that allos us to interact with the shell</li>
-          <li>shell: the software that interprets and executes the various commands that we type in the terminal</li>
-          <li>bash or bash commands: used to describe the shell and the type of commands that we will use</li>
-          <li>pair programming: occurs when two developers collaborate on a feature or a project</li>
-          <li>driver-navigator model: The developer using the keyboard to type code is known as the "driver" and the "navigator" is responsible fr the overall direction that the pair decides to go</li>
-          <li>GitHub: a cloud-based service that allows developers to store, manage and collaborate on code</li>
-          <li>Git: software on your computer that tracks changes that you make to your code. It is a version control system that lets you manage and keep track of each version of your project</li>
-          <li>ssh-agent : is a program that keeps track of a user's identity keys and passphrases</li>
-          <li>web development project : is a web appliation, or web app, that provides a solution to a real-world problem</li>
-          <li>MVP (minimum variable product) : This is usually the first iteration of a product without extra features</li>
-          <li>SHA or hash : a long string of numbers or letters</li>
-          <li>Markdown (.md) : a lightweight plain-text formatting language</li>
-          <li>feature: a functional part of the application or website that has value or fulfills a need in the business</li>
-          <li>graphical user interface (GUI) : a way for users to interact with the computer visually</li>
-          <li>IDE : contains many essential tools needed for code development such as a source code editor, local build automation, a debugger and the ability to extend the IDE's capabilities with extensions to meet specific development needs</li>
-          <li>Branch : a copy or version of the code that can be worked on independently in isolation so development changes do not disrupt other team members who are also working on the code and testing their solutions</li>
-          <li>main (or master) : default or base branch</li>
-          <li>pull request (PR) : used to merge a comparison branch (in our case, the feature branch) into the base branch</li>
-          <li>CLI : how to navigate through directories and files, create a new folder for our boot camp files, and create a new file in the boot camp folder.</li>
-          <li>Staging area : informs Git that the changes will be added in the next commit</li>
-          <li>URL : a fundamental web development concept. The unique address given to a specific resource on the web</li>
-          <li>Hypertext Markup Language (HTML) : gives the content structure</li>
-          <li>Cascading Style Sheets (CSS) : give the content style</li>
-          <li>JavaScript (JS) : to handle logic and allow users to interact with a website</li>
-          <li>Child elements: elements nested inside other elements</li>
-          <li>Parent elements: element that holds all the children</li>
-
+          <li> Code
+            <ul>
+              <li>Meow</li>
+            </ul>
+          </li>
+          <li>Components
+            <ul>
+              <li>Rawr</li>
+            </ul>
+          </li>
+          <li>Terminology
+            <ul>
+              <li>SEO
+                <ul>
+                  <li>Search Engine Optimization</li>
+                  <li>the process of improving the ranking of a website in a search engine</li>
+                  <li>Your SEO results will influence the frequency your website will show up in results</li>
+                </ul>
+              </li>
+              <li>Command line or terminal
+                <ul>
+                  <li>a text interface for running computer programs, navigating the files and folders on your computer, and working with web development tools</li>
+                </ul>
+              </li>
+              <li>Markdown
+                <ul>
+                  <li>a simple markup language used to create formatted text using a plain-text editor</li>
+                </ul>
+              </li>
+              <li>Deployment
+                <ul>
+                  <li>The process that makes a website or an update to a website available to users</li>
+                </ul>
+              </li>
+              <li>User Story
+                <ul>
+                  <li>A short description of the user you're creating an application for.</li>
+                  <li>It helps to keep your audience in mind when working on different parts, or features, of your applications</li>
+                  <li>It normally consists of the following three sections
+                    <ul>
+                      <li>The type of person using your app</li>
+                      <li>What the user wants</li>
+                      <li>Why the user wants it/what the problem is</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Acceptance Criteria
+                <ul>
+                  <li>A list of the things your application must achieve in order to be considered done</li>
+                </ul>
+              </li>
+            </ul>
+            <li>
+              <ul>
+                <li></li>
+              </ul>
+            </li>
+          </li>
+          <li>Structure
+            <ul>
+              <li>To Build a website we use a step-by-step process:
+                <ul>
+                  <li>First, we use HTML to add structure and a frame to work within</li>
+                  <li>Then we use CSS to add style</li>
+                  <li>Afterwards, we use JavaScript to make our website interactive</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Useful Websites
+            <ul>
+              <li>Bitches</li>
+            </ul>
+          </li>
         </ul>
       </section>
 
-      <section class="card" id="css-section">
-        <h2>Helpful Websites</h2>
-        <ul>
-          <li> <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key">Generating a new SSH Key</a></li>
-          <li> <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Adding a new SSH key to your GitHub account</a></li>
-          <li> <a href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer">Setting your Git username</a> </li>
-          <li> <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Command Cheat Sheet</a> </li>
-          <li> <a href="https://www.markdownguide.org/cheat-sheet/">Markdown cheat sheet</a> </li>
-          <li> <a href="https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines">Pro Git book on commit messages</a> </li>
-          <li> <a href="https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines">Contributing to a Project</a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">HTML meta Tag</a></li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">How to sort a list</a> </li>
-          <li> <a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html">Command line Git</a> </li>
-          <li> <a href="https://docs.github.com/en/rest/git/commits?apiVersion=2022-11-28">Git Commits</a> </li>
-          
-        </ul>
-      </section>
-
-    </main>
+</main>
 
     <footer>
       <p>I can code!</p>
