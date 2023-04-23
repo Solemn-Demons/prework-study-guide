@@ -185,6 +185,26 @@
                       <li>semantic element that defines a section in a document that conatins thematic content</li>
                     </ul>
                   </li>
+                  <li>id=
+                    <ul>
+                      <li>Used by HTML as a way to identify elements and select them</li>
+                    </ul>
+                  </li>
+                  <li>card
+                    <ul>
+                      <li>A flexible and extensive content container</li>
+                    </ul>
+                  </li>
+                  <li>. or a period
+                    <ul>
+                      <li>designates this as a class selector</li>
+                    </ul>
+                  </li>
+                  <li>box-shadow
+                    <ul>
+                      <li>adds shadow effects around an elements frame</li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li>Attributes
@@ -198,6 +218,11 @@
                   <li>href
                     <ul>
                       <li>Points to the URL for the link</li>
+                      <li>Uses a relative path
+                        <ul>
+                          <li>This means the location is derived from the current location</li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li>alt
@@ -205,6 +230,11 @@
                       <li>Contains a text string that describes the appearance and functionality of the image</li>
                       <li>Is important for screen readers and other assistive technologies.</li>
                       <li>It also improves search engine rankings for your website</li>
+                    </ul>
+                  </li>
+                  <li>rel
+                    <ul>
+                      <li>specifies the relationship between the current document and the linked document resource</li>
                     </ul>
                   </li>
                 </ul>
@@ -315,6 +345,13 @@
               <li>Order matters
                 <ul>
                   <li>h1 - h6: the order of heading sizes. h1 should only appear on a page once</li>
+                  <li>Make sure you wrap each list item to create a new bullet section</li>
+                  <li>Assigning colors in CSS can be done with
+                    <ul>
+                      <li>semantic references</li>
+                      <li>hexadecimal code or hex #</li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -332,12 +369,77 @@
         <ul>
           <li> Code
            <ul>
-            <li>Meow</li>
+            <li> *
+              <ul>
+                <li>Special Wild card symbol</li>
+                <li>Used to apply a rule to all the elements visible on the page</li>
+              </ul>
+            </li>
            </ul>
           </li>
-          <li>Components
+          <li>Structure
             <ul>
-              <li>Rawr</li>
+              <li>CSS Rule
+                <ul>
+                  <li>div{color: blue: text-align: justify;}
+                    <ul>
+                      <li>Selector
+                        <ul>
+                          <li>div</li>
+                        </ul>
+                      </li>
+                      <li>Declaration
+                        <ul>
+                          <li>Is sequenced by a property: value; combo</li>
+                          <li>contains two important components</li>
+                        </ul>
+                      </li>
+                      <li>Property
+                        <ul>
+                          <li>Example: color or text-align</li>
+                          <li>What we want to apply</li>
+                        </ul>
+                      </li>
+                      <li>Value
+                        <ul>
+                          <li>Example: blue or justify</li>
+                          <li>The value of the applied property</li>
+                        </ul>
+                      </li>
+                      <li>margin
+                        <ul>
+                          <li>indicates how much space we want around the outside of an element</li>
+                          <li>Is not visible on the page; it merely appears as a buff</li>
+                          <li>0 indicates we want NO extra space around the element</li>
+                        </ul>
+                      </li>
+                      <li>padding
+                        <ul>
+                          <li>Adds space around the content inside an element</li>
+                          <li>Makes the entire element bigger</li>
+                          <li>Is located inside the element, whereas the margin is the transparent buffer outside an element</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>CSS header and footer selector example
+                    <ul>
+                      <li>header,</li>
+                      <li>footer {
+                        <ul>
+                          <li>width: 100%;</li>
+                          <li>height: 120px;</li>
+                          <li>background-color: blue;</li>
+                          <li>color: white;</li>
+                        </ul>
+                        <li>}</li>
+                      </li>
+                      <li>We combined two rules with a comma, allowing the declarations to affect both selectors</li>
+                      <li>This allows us to share specific styles with two or more groups and also keeps us from writing DRY codes</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li>Terminology
@@ -345,6 +447,42 @@
               <li>CSS or Cascading Style Sheets
                 <ul>
                   <li>Used to describe the presentation and how each element is rendered on the webpage</li>
+                  <li>Gives the content style by defining things like: color, aesthetics, visual layout, and organization</li>
+                </ul>
+              </li>
+              <li>Inline CSS
+                <ul>
+                  <li>Apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only</li>
+                  <li>They're useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline must be edited individually whenever you make a design change</li>
+                </ul>
+              </li>
+              <li>Internal style sheet
+                <ul>
+                  <li>Contains CSS rules for the webpage in the head sector of the HTML file</li>
+                  <li>The rules only apply to that page and you can configure CSS classes and IDs to style multiple elements in the page code</li>
+                </ul>
+              </li>
+              <li>external CSS style sheet
+                <ul>
+                  <li>The most common way to style a webpage</li>
+                  <li>It allows developers to keep all their CSS rules in a separate file. which makes design changes easier</li>
+                </ul>
+              </li>
+              <li>Separation of concerns
+                <ul>
+                  <li>a widely used term in web development and refers to separating code into different files based on one</li>
+                  <li>Based on the idea that each section of code should have its own responsibility</li>
+                </ul>
+              </li>
+              <li>CSS box model
+                <ul>
+                  <li>Every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, and content</li>
+                </ul>
+              </li>
+              <li>DRY or do not repeat yourself
+                <ul>
+                  <li>a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained</li>
+                  <li>This can greatly reduce the overall size and complexity of a codebase</li>
                 </ul>
               </li>
             </ul>
@@ -362,7 +500,138 @@
         <ul>
           <li> Code
               <ul>
-                <li>Meow</li>
+                <li>SSH
+                  <ul>
+                    <li>ssh-agent
+                      <ul>
+                        <li>a program that keeps track of a user's identity keys and passphrases</li> 
+                      </ul>
+                    </li>
+                    <li>ls -al ~/.ssh
+                      <ul>
+                        <li>Shows you if any existing SSH keys are present</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>Github
+                  <ul>
+                   <li># or ## 
+                    <ul>
+                      <li>is for heading 1 and heading 2</li>
+                    </ul>
+                   </li>
+                   <li>Compare and pull request
+                    <ul>
+                      <li>Give the pull request (PR) a descriptive title</li>
+                      <li>add instructions about what changes were made, how the feature is supposed to function, and how to start the application so the feature can be tested</li>
+                      <li>how the feature is supposed to function</li>
+                      <li>Make sure to designate the branch your trying to merge the code into</li>
+                    </ul>
+                  </li>
+                 </ul>
+                </li>
+                <li>Git
+                  <ul>
+                    <li>git config
+                      <ul>
+                        <li>Changes the username associated with your git</li>
+                        <li>Only affects future commits and will not change the name used for past commits</li>
+                        <li>Will also change the email you use</li>
+                      </ul>
+                    </li>
+                    <li> git revert
+                      <ul>
+                        <li>A command that will return a SHA back to a correctable version of coding, which allows you to forgo redoing the entire code line</li>
+                      </ul>
+                    </li>
+                    <li>git status
+                      <ul>
+                        <li>This will check which branch we are currently in</li>
+                      </ul>
+                    </li>
+                    <li>git checkout -b (Descripter)/(name of choice)
+                      <ul>
+                        <li>Will create a new feature branch</li>
+                        <li>Checkout 
+                          <ul>
+                            <li>Moves the working branch to a new branch</li>
+                          </ul>
+                        </li>
+                        <li>-b
+                          <ul>
+                            <li>A flag that creates a new branch</li>
+                          </ul>
+                        </li>
+                        <li>feature
+                          <ul>
+                            <li>Indicates that the branch is a feature</li>
+                            <li>Its best to add a descrpiter and name that allows other coders to understand the branches intent</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>git add -A
+                      <ul>
+                        <li>add
+                          <ul>
+                            <li>Adds modifications in the current working branch to the staging area</li>
+                          </ul>
+                        </li>
+                        <li>-A
+                          <ul>
+                            <li>This flag indicates that we want to add all changes</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>git commit -m "Your message here"
+                      <ul>
+                        <li>commit
+                          <ul>
+                            <li>Solidifies the code as the new appropriate version</li>
+                          </ul>
+                        </li>
+                        <li>-m
+                          <ul>
+                            <li>Associates a message to the code thats been commited</li>
+                          </ul>
+                        </li>
+                        <li>"your message here"
+                          <ul>
+                            <li>Should add a short descripter that will allow another coder to understand what changes have been made to the code or the purpose of the code your commiting</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>git pull origin main
+                      <ul>
+                        <li>pull
+                          <ul>
+                            <li>Adds the branch's modifications into the local environment</li>
+                          </ul>
+                        </li>
+                        <li>origin
+                          <ul>
+                            <li>indicates the source of the pull will be in the GitHub repo</li>
+                          </ul>
+                        </li>
+                        <li>It is important to always do a git pull to make sure that you have the latest version of the project on your local computer</li>
+                      </ul>
+                    </li>
+                    <li>git push origin (your branch name here)
+                      <ul>
+                        <li>Pushes your changes to the remote branch</li>
+                        <li>push
+                          <ul>
+                            <li>Pushes our changes to the remote GitHub branch</li>
+                            <li>When using the push command, you can create a new remote branch or add new changes to an existing branch</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
               </ul>
           </li> 
           </li>
@@ -377,11 +646,54 @@
                 <ul>
                   <li>A free, open source version control system that allows web developers to collaborate on projects without overwriting each other's work</li>
                   <li>It also allows developers to revert to previous versions of the code if a problem is discovered</li>
+                  <li>The Git commands are different from bash commands as they always start with git and are used to save and track versions of your code</li>
                 </ul>
               </li>
               <li>GitHub
                 <ul>
                   <li>The largest provider of internet hosting for software and web development code, and provides the version control functionality of Git in a central repository</li>
+                  <li>a cloud-based service that allows developers to store, manage and collaborate on code</li>
+                  <li>Git Hub issue
+                    <ul>
+                      <li>Is a task management tool which gives developers and teams an easy way to keep track of key tasks and progress</li>
+                      <li>A built in to-do-list</li>
+                      <li>Helps teams with:
+                        <ul>
+                          <li>Track, organize and communicate ideas, tasks, bugs and enhancments</li>
+                          <li>Identifty bottlenecks or blockers that could prevent work progress</li>
+                          <li>Avoid duplicating work by assigning tasks or issues</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>SSH key
+                <ul>
+                  <li>An access credential for the secure shell (SSH) network protocol</li>
+                  <li>Allows developers to interface with certain remote services without having to constantly retype login information</li>
+                  <li>All public SSH keys end with .pub</li>
+                </ul>
+              </li>
+              <li>SHA (HASH)
+                <ul>
+                  <li>A long string of numbers or letters</li>
+                  <li>Developers often type out only the first seven numbers or letters</li>
+                </ul>
+              </li>
+              <li>Version Control
+                <ul>
+                  <li>Allows us to track our progress while keeping the different, older versions in case we need to revert to an older version</li>
+                </ul>
+              </li>
+              <li>Blocker
+                <ul>
+                  <li>Being stuck on a particular problem that is preventing you from moving forward</li>
+                </ul>
+              </li>
+              <li>Bottleneck
+                <ul>
+                  <li>A point in development slowing down the rest of production</li>
                 </ul>
               </li>
             </ul>
@@ -398,10 +710,98 @@
         <h2>JavaScript</h2>
         <ul>
           <li> Code
-              <ul>
-                <li>Meow</li>
+             <ul>
+                <li>For Loop
+                  <ul>
+                    <li>uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over</li>
+                    <li>It will continue endlessly unless it is interupted by another statement</li>
+                    <li>We can tell the computer to go through each array and log them into the console until there is nothin left unlogged</li>
+                    <li>Put the code that we want to execute for each loop inside cruly brackets</li>
+                    <li>We need the index and array length to use this loop
+                      <ul>
+                        <li>This is important because the computer needs to know how many times to run the code until it runs our of arrays</li>
+                      </ul>
+                    </li>
+                    <li>Contains three important statements
+                      <ul>
+                        <li>The first determines the starting point for our loop</li>
+                        <li>The second is the condition</li>
+                        <li>x++
+                          <ul>
+                            <li>A shortcut way of writing x+1</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>=
+                  <ul>
+                    <li>assign the specific data that we want stored in our variable</li>
+                  </ul>
+                </li>
+                <li>variable or var
+                  <ul>
+                    <li>Simply a named container that allows us to store data in our code</li>
+                    <li>The name must be unique because it is how we will reference the information stored in the variable in our code</li>
+                  </ul>
+                </li>
+                <li>console.log()
+                  <ul>
+                    <li>outputs a message to the web console by adding an argument</li>
+                    <li>Console refers to a test environment that developers use to check out their code</li>
+                    <li>.log() a method which meets a set of instructions that can be executed by a computer. This method will output whatever we add inside the parentheses to the console.</li>
+                  </ul>
+                </li>
+                <li>if statement 
+                  <ul>
+                    <li>A way of introducing decision-making into our code</li>
+                    <li>The code will only execute if the statement meets a condition, or is true</li>
+                    <li>The computer will continue through all of the conditions that we list, evaluating whether or not a condition is truthy. Once it finds condition, it will run the code in the curly brackets associated with that condition and then stop the if statment</li>
+                  </ul>
+                </li>
+                <li>falsy
+                  <ul>
+                    <li>A value is considered falsy is it is one of the following values: 0, -0, On, "", null, undefined, NaN or has the boolean value of false</li>
+                  </ul>
+                </li>
+                <li>truthy
+                  <ul>
+                    <li>All other values, included the boolean truth value</li>
+                  </ul>
+                </li>
+                <li>else if
+                  <ul>
+                    <li>Adds more than one condition, this condition will be executed secondly if the first condition is true and the second is also true</li>
+                  </ul>
+                </li>
+                <li>===
+                  <ul>
+                    <li>Checks to see if two values are equal</li>
+                    <li>Returns boolean results (A false returns if the values are not equal)</li>
+                  </ul>
+                </li>
+                <li>length
+                  <ul>
+                    <li>A built-in property of an array to discover how long an array is</li>
+                  </ul>
+                </li>
+                <li>Condition
+                  <ul>
+                    <li>As long as the number in the variable is less than the length of the array, the loop will keep running</li>
+                  </ul>
+                </li>
+                <li>/* before and */ after the block of code
+                  <ul>
+                    <li>Comments out the code</li>
+                  </ul>
+                </li>
+                <li> Math.floor() and Math.random()
+                  <ul>
+                    <li>used together to generate a random number</li>
+                  </ul>
+                </li>
               </ul>
-          </li> 
           </li>
           <li>Components
             <ul>
@@ -413,6 +813,76 @@
               <li>JavaScript 
                 <ul>
                   <li>a lightweight program used to provide logic and interactivity</li>
+                  <li>Handle logic and allow user to interact with a website</li>
+                  <li>A high-level dynamic programming language that allows users to interact with websites adding things like:
+                    <ul>
+                      <li>effects</li>
+                      <li>interactivity</li>
+                      <li>data communication</li>
+                    </ul>
+                  </li>
+                  <li>Each line in Java ends with a semicolon</li>
+                  <li>Runs from the first statement at the top of the page, down to the last statement at the bottom of the page</li>
+                  <li>We can have more than one condition by using else if</li>
+                </ul>
+              </li>
+              <li>Describe control flow
+                <ul>
+                  <li>the order in which a computer executes code in a JavaScript file</li>
+                </ul>
+              </li>
+              <li>string
+                <ul>
+                  <li>A list of variables that exist within the page for interaction</li>
+                  <li>All strings are surrounded by quotation marks</li>
+                </ul>
+              </li>
+              <li>Control flow
+                <ul>
+                  <li>The order in which a computer executes code in a script</li>
+                </ul>
+              </li>
+              <li>Conditional statements and loops
+                <ul>
+                  <li>Controls the order in which code is executed, or if it is even executed at all</li>
+                </ul>
+              </li>
+              <li>array
+                <ul>
+                  <li>It stores multiple values and elements in one variable. These values can be of any data type — meaning you can store a string, number, boolean, and other data types in one variable.</li>
+                  <li>A single variable that is used to hold a group of data</li>
+                  <li>Typically used to hold data that is related in some way</li>
+                  <li>To work with individual data items inside an array, we need to have the location of the data item</li>
+                </ul>
+              </li>
+              <li>index
+                <ul>
+                  <li>Identifies the location of a data item within an array by giving it a unique number</li>
+                </ul>
+              </li>
+              <li>indices or location identifiers
+                <ul>
+                  <li>Will always be whole numbers that increase by 1 each time</li>
+                  <li>Follows a predictable pattern</li>
+                </ul>
+              </li>
+              <li>loops
+                <ul>
+                  <li>The most efficient way to log the values in the array</li>
+                </ul>
+              </li>
+              <li>Commenting out code
+                <ul>
+                  <li>Makes the code inactive without deleting it, just in case you need it later</li>
+                </ul>
+              </li>
+              <li>Function
+                <ul>
+                  <li>a set of instructions that tells the computer how to perform a certain task</li>
+                  <li>Is different from a for loop or conditional statement because functions do not automatically execute when the JavaScript file is run</li>
+                  <li>You must call a function by name in order to execute it</li>
+                  <li>Create a function, give it a unique name and then use this unique name to call the function</li>
+                  <li>Function names are followed by parentheses and the code to be executed is inside curly brackets</li>
                 </ul>
               </li>
             </ul>
@@ -431,7 +901,74 @@
         <ul>
           <li> Code
             <ul>
-              <li>Meow</li>
+              <li>CLI
+                <ul>
+                  <li>ls 
+                    <ul>
+                      <li>Opens a list of files and directories</li>
+                    </ul>
+                  </li>
+                  <li>cd
+                    <ul>
+                      <li>Changes the directory we are in
+                        <ul>
+                          <li>Example: cd bootcamp</li>
+                        </ul>
+                      </li>
+                      <li>If used without a directory, cd will send us back to the beginning list of Directories</li>
+                    </ul>
+                  </li>
+                  <li>tab
+                    <ul>
+                      <li>If you use the tab bar after the cd command with a protion of the directory your trying to change into it will autofill the information</li>
+                      <li>Example: cd bo with a tab will autofill cd bootcamp</li>
+                    </ul>
+                  </li>
+                  <li>pwd
+                    <ul>
+                      <li>Short for print working directory</li>
+                      <li>Will print out the directory that we are in to display all items within the directory</li>
+                    </ul>
+                  </li>
+                  <li>mkdir
+                    <ul>
+                      <li>Creates a directory</li>
+                      <li>Example: mkdir bootcamp</li>
+                    </ul>
+                  </li>
+                  <li>touch
+                    <ul>
+                      <li>Creates a new file</li>
+                      <li>Example: touch first-day.txt</li>
+                    </ul>
+                  </li>
+                  <li>open
+                    <ul>
+                      <li>Opens the file into a default text editor</li>
+                      <li>Example: open first-day.txt</li>
+                    </ul>
+                  </li>
+                  <li>Spotlight
+                    <ul>
+                      <li>A mac search bar opened with the command key and spacebar</li>
+                    </ul>
+                  </li>
+                  <li>VS Code
+                    <ul>
+                      <li>code . 
+                        <ul>
+                          <li>Will open the directory you are currently in</li>
+                        </ul>
+                      </li>
+                      <li>code
+                        <ul>
+                          <li>Will open VC</li>
+                        </ul>
+                      </li>
+                   </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li>Components
@@ -448,14 +985,50 @@
                   <li>Your SEO results will influence the frequency your website will show up in results</li>
                 </ul>
               </li>
+              <li>CLI (command-line program)
+                <ul>
+                  <li>Inputs text commands to execute operating system functions</li>
+                  <li>Communicates directly with the computer through text commands</li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>GUI or Graphical user interface
+                <ul>
+                  <li>Allows users to navigate the computer interface with a mouse or trackpad by clicking on buttons, items or menus</li>
+                </ul>
+              </li>
               <li>Command line or terminal
                 <ul>
                   <li>a text interface for running computer programs, navigating the files and folders on your computer, and working with web development tools</li>
+                  <li>The application that allows us to interact with the shell</li>
+                </ul>
+              </li>
+              <li>Shell
+                <ul>
+                  <li>The software that interprets and executes the various commands that we type in the terminal</li>
+                  <li>understands and processes commands entered in the CLI</li>
+                </ul>
+              </li>
+              <li>Bash or Bash Commands
+                <ul>
+                  <li>Describes the shell and the types of commands that we will use</li>
+                </ul>
+              </li>
+              <li>Package
+                <ul>
+                  <li>contains code written by others that we can add to and use on our computers and in our projects</li>
+                </ul>
+              </li>
+              <li>Package Manager
+                <ul>
+                  <li>Automates the process of installing, upgrading, configuring and removing packages</li>
                 </ul>
               </li>
               <li>Markdown
                 <ul>
                   <li>a simple markup language used to create formatted text using a plain-text editor</li>
+                  <li>.md indicates a markdown file</li>
+                  <li>Similiar to a .doc except we have to use special syntax for formatting</li>
                 </ul>
               </li>
               <li>Deployment
@@ -482,11 +1055,137 @@
                 </ul>
               </li>
             </ul>
-            <li>
-              <ul>
-                <li></li>
-              </ul>
-            </li>
+              <li>Code snippet
+                <ul>
+                  <li>a portion of code</li>
+                </ul>
+             </li>
+             li>Algorithm
+                <ul>
+                  <li>a sequence of steps or rules that we can use to solve a problem</li>
+                </ul>
+              </li>
+              <li>Event Trigger
+                <ul>
+                  <li>The completion of the first event will trigger the second event</li>
+                </ul>
+              </li>
+              <li>Conditional statement
+                <ul>
+                  <li>Allows us to make decisions based on conditions in our code</li>
+                </ul>
+              </li>
+              <li>Loop
+                <ul>
+                  <li>An action that we will repeat over and over again until a condition is met</li>
+                </ul>
+              </li>
+              <Li>Computational Thinking
+                <ul>
+                  <li>A strategy that helps us write comprehensive results-oriented code by breaking down the problem we are trying to solve into simple logical steps</li>
+                  <li>The Four Cornerstones of computational Thinking
+                    <ul>
+                      <li>Decomposition</li>
+                      <li>Pattern Recognition</li>
+                      <li>Abstraction</li>
+                      <li>Testing and Debugging algorithms</li>
+                    </ul>
+                  </li>
+                 </ul>
+              </Li>
+              <li>Agile (Agile software development)
+                <ul>
+                  <li>Helps developers handle change and uncertainty during the development process</li>
+                </ul>
+              </li> 
+              <li>Pair Programming
+                <ul>
+                  <li>When two developers collaborate on a feature or a project</li>
+                </ul>
+              </li>
+              <li>driver-navigator model
+                <ul>
+                  <li>A pair programming strategy used to divy tasks</li>
+                  <li>driver
+                    <ul>
+                      <li>The developer using the keyboard to type code</li>
+                    </ul>
+                  </li>
+                  <li>navigator
+                    <ul>
+                      <li>They are responsible for the overall direction that the pair take</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Web development project
+                <ul>
+                  <li>Is a web application, or web app, that provides a solution to a real world problem</li>
+                </ul>
+              </li>
+              <li>MVP or minimum viable product
+                <ul>
+                  <li>The first iteration of a product without extra features</li>
+                </ul>
+              </li>
+              <li>In the cloud
+                <ul>
+                  <li>Referring to a series of software and servers that run on the internet and store your data remotely</li>
+                </ul>
+              </li>
+              <li>Feature
+                <ul>
+                  <li>a functional part of the application or website that has value or fulfills a need in the business</li>
+                </ul>
+              </li>
+              <li>code editor
+                <ul>
+                  <li>A text editor made for writing software that contains the wools necessary for syntax highlighting and executing the code</li>
+                </ul>
+              </li>
+              <li>Branch
+                <ul>
+                  <li>A copy or version of the code that can be worked on independently from other coders</li>
+                </ul>
+              </li>
+              <li>Feature Branch
+                <ul>
+                  <li>Branch where we will be adding our new code</li>
+                  <li>It is very important to add commit messages to describe what changes we've made to the code</li>
+                  <li>Once committed we then push up the changes to our feature branch in our github respository</li>
+                  <li>Once in the repository, You can make a pull request to add the feature branch coding to the main branch</li>
+                </ul>
+              </li>
+              <li>Main or master
+                <ul>
+                  <li>The default branch</li>
+                </ul>
+              </li>
+              <li>Pull Request or PR
+                <ul>
+                  <li>Used to merge a comparison branch into the main branch</li>
+                  <li>Other developers and collaborators on your team can view those changes you made to the code</li>
+                  <li>You can also view any conflicts between your comparison branch and base branch</li>
+                </ul>
+              </li>
+              <li>URL or Uniform Resource Locator
+                <ul>
+                  <li>a fundamental web development concept</li>
+                  <li>When we deploy a website and make it available to a user</li>
+                </ul>
+              </li>
+              <li>Debugging
+                <ul>
+                  <li>one of the most important parts of the development process</li>
+                  <li>Points our mistakes or errors as we review the code, which helps us to repair damage before it can be added into the main line of data</li>
+                </ul>
+              </li>
+              <li>deployment
+                <ul>
+                  <li>When we make a website "live" on the internet and available for everyone to see</li>
+                </ul>
+              </li>
+            </ul>  
           </li>
           <li>Structure
             <ul>
